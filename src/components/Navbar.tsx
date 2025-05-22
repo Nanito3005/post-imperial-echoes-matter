@@ -29,7 +29,6 @@ const Navbar: React.FC = () => {
           <a href="#introduction" className="hover:text-burgundy transition-colors">Introduction</a>
           <a href="#timeline" className="hover:text-burgundy transition-colors">Timeline</a>
           <a href="#connections" className="hover:text-burgundy transition-colors">BLM Connections</a>
-          <a href="#resources" className="hover:text-burgundy transition-colors">Resources</a>
         </div>
         
         {/* Mobile menu */}
@@ -51,17 +50,10 @@ const Navbar: React.FC = () => {
             </a>
             <a 
               href="#connections" 
-              className="hover:text-burgundy transition-colors py-2 border-b border-gray-700"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              BLM Connections
-            </a>
-            <a 
-              href="#resources" 
               className="hover:text-burgundy transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Resources
+              BLM Connections
             </a>
           </div>
         )}
