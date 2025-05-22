@@ -9,18 +9,18 @@ const Hero: React.FC = () => {
       
       <div className="container mx-auto z-10 animate-fade-in">
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-6 max-w-4xl">
-          Post-Imperialism in the UK <span className="text-burgundy">&</span> Its Connection to Black Lives Matter
+          Britain After Empire <span className="text-burgundy">&</span> Black Lives Matter
         </h1>
         
         <h2 className="font-sans text-xl md:text-2xl font-light max-w-3xl mb-8 leading-relaxed">
-          Exploring how Britain's imperial past shapes present-day racial justice movements and societal structures
+          How Britain's past shapes today's movement for racial equality
         </h2>
         
         <a 
           href="#introduction"
           className="inline-flex items-center bg-burgundy hover:bg-opacity-80 text-white py-3 px-6 rounded-md transition-all"
         >
-          Begin Exploring
+          Start Learning
           <ArrowDownCircle className="ml-2" size={20} />
         </a>
       </div>

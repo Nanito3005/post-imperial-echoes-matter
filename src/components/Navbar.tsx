@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-navy text-white py-4 px-6 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="font-serif text-xl md:text-2xl">
-          Post-Imperial Britain
+          Britain After Empire
         </Link>
         
         {/* Mobile menu button */}
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex space-x-8">
           <a href="#introduction" className="hover:text-burgundy transition-colors">Introduction</a>
           <a href="#timeline" className="hover:text-burgundy transition-colors">Timeline</a>
-          <a href="#connections" className="hover:text-burgundy transition-colors">BLM Connections</a>
+          <a href="#connections" className="hover:text-burgundy transition-colors">BLM Links</a>
         </div>
         
         {/* Mobile menu */}
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
               className="hover:text-burgundy transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              BLM Connections
+              BLM Links
             </a>
           </div>
         )}
