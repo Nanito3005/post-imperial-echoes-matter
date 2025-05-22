@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 
@@ -8,10 +7,10 @@ const Footer: React.FC = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-serif mb-4">Post-Imperial Britain</h3>
+            <h3 className="text-xl font-serif mb-4">Britain After Empire</h3>
             <p className="text-sm text-gray-300">
-              An educational resource exploring the connections between British imperialism
-              and contemporary racial justice movements.
+              A learning resource that shows the links between Britain's empire history
+              and today's fight for racial justice.
             </p>
           </div>
           
@@ -65,7 +64,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Post-Imperial Britain Educational Resource. This is an educational project.</p>
+          <p>© {new Date().getFullYear()} Britain After Empire Learning Resource. This is an educational project.</p>
         </div>
       </div>
     </footer>
