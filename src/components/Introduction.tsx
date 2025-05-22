@@ -8,51 +8,53 @@ const Introduction: React.FC = () => {
     <section id="introduction" className="content-section bg-cream">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-navy font-serif mb-6 text-center">Britain After Empire</h2>
+          <h2 className="text-navy font-serif mb-6 text-center">Understanding Post-Imperial Britain</h2>
           <Separator className="bg-burgundy h-1 w-20 mx-auto mb-8" />
           
           <div className="prose prose-lg mx-auto">
             <p className="mb-6">
-              Britain once ruled over a huge empire. Even though that empire is gone now, its effects 
-              are still felt today. This affects how people in Britain think about race, identity, and who 
-              "belongs" in Britain.
+              The legacy of British imperialism continues to shape contemporary British society and politics,
+              influencing everything from racial relations to national identity. Post-imperialism refers to the
+              period following the formal dissolution of the British Empire, examining how imperial structures and
+              mindsets persist in modern Britain.
             </p>
             
             <p className="mb-10">
-              This website looks at how Britain's past connects to movements like Black Lives Matter today.
-              We'll explore how the history of empire still shapes current problems with racism and inequality.
+              This educational resource examines how Britain's imperial past connects to present-day racial justice
+              movements like Black Lives Matter, tracing the threads between historical colonial policies and
+              contemporary racial inequalities, immigration debates, and cultural tensions.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
               <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h3 className="text-navy text-xl mb-3 font-serif">Empire's Impact</h3>
-                  <p className="text-sm">How the old ways of thinking from empire times still affect British society today.</p>
+                  <h3 className="text-navy text-xl mb-3 font-serif">Colonial Legacy</h3>
+                  <p className="text-sm">How the structures and attitudes of empire continue to influence modern British institutions and society.</p>
                 </CardContent>
               </Card>
               
               <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h3 className="text-navy text-xl mb-3 font-serif">Fighting Racism</h3>
-                  <p className="text-sm">How past wrongs connect to today's movements for equality and justice.</p>
+                  <h3 className="text-navy text-xl mb-3 font-serif">Racial Justice</h3>
+                  <p className="text-sm">Examining how historical injustices connect to contemporary movements for racial equality and recognition.</p>
                 </CardContent>
               </Card>
               
               <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h3 className="text-navy text-xl mb-3 font-serif">Who We Are</h3>
-                  <p className="text-sm">How empire history shapes how Britain sees itself and who counts as "British" today.</p>
+                  <h3 className="text-navy text-xl mb-3 font-serif">Cultural Identity</h3>
+                  <p className="text-sm">Understanding how imperial history shapes modern British identity, multiculturalism, and citizenship debates.</p>
                 </CardContent>
               </Card>
             </div>
 
             <blockquote className="border-l-4 border-burgundy pl-6 py-2 italic text-gray-700 my-8">
-              "The past isn't dead. It's not even past." — William Faulkner
+              "The past is never dead. It's not even past." — William Faulkner
             </blockquote>
             
             <p>
-              By looking at these connections, we can better understand why movements like 
-              Black Lives Matter matter in Britain today.
+              Through examining these connections, we can better understand how British society's present challenges
+              are shaped by its imperial past, and how movements like Black Lives Matter are responding to this legacy.
             </p>
           </div>
         </div>
