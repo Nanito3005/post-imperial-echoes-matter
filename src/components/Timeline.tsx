@@ -20,74 +20,74 @@ interface TimelineEvent {
 const timelineEvents: TimelineEvent[] = [
   {
     year: "1833",
-    title: "End of Slavery Act",
-    description: "Britain ended slavery in most of its colonies, but paid the slave owners instead of the enslaved people. This created money gaps that still exist today.",
+    title: "Slavery Abolition Act",
+    description: "Britain abolished slavery throughout most of its colonies, but compensated slave owners rather than enslaved people. This established patterns of economic inequality that persist today.",
     category: "imperial"
   },
   {
     year: "1865-1930s",
-    title: "Race Theories",
-    description: "Scientists created fake theories about race that claimed white people were better than others. These ideas were used to justify ruling over other countries and still affect racism today.",
+    title: "British Race Science & Eugenics",
+    description: "Development of pseudo-scientific racial theories that justified imperial rule and created hierarchies of human value that continue to influence modern racism.",
     category: "imperial"
   },
   {
     year: "1948",
-    title: "Windrush Arrives",
-    description: "New law gave citizenship to Commonwealth subjects. The Empire Windrush ship brought Caribbean immigrants to help rebuild Britain after the war.",
+    title: "Arrival of Windrush Generation",
+    description: "British Nationality Act granted citizenship to Commonwealth subjects. The Empire Windrush brought Caribbean immigrants to help rebuild post-war Britain.",
     category: "post-imperial"
   },
   {
     year: "1958",
     title: "Notting Hill Race Riots",
-    description: "White people attacked Caribbean communities in London, showing tensions as immigrants from former colonies moved to Britain.",
+    description: "White violence against Caribbean communities in London revealed racial tensions in post-war Britain as imperial subjects claimed their rights to live in the 'mother country'.",
     category: "post-imperial"
   },
   {
     year: "1962-1971",
-    title: "Immigration Laws Get Stricter",
-    description: "New laws specifically made it harder for Commonwealth citizens to come to Britain, showing anxiety about race and who belongs.",
+    title: "Immigration Acts",
+    description: "Series of increasingly restrictive immigration laws that specifically targeted Commonwealth citizens, revealing post-imperial anxiety about race and belonging.",
     category: "post-imperial"
   },
   {
     year: "1981",
-    title: "Citizenship Act",
-    description: "Created different levels of citizenship, further restricting immigration from former colonies and ending imperial citizenship rights.",
+    title: "British Nationality Act",
+    description: "Created different tiers of citizenship, further restricting immigration from former colonies and cementing the end of imperial citizenship rights.",
     category: "post-imperial"
   },
   {
     year: "1993",
     title: "Stephen Lawrence Murder",
-    description: "The racist murder of Stephen Lawrence and the investigation that followed exposed deep racism in British police and society.",
+    description: "The racist murder of Stephen Lawrence and the subsequent Macpherson Report exposed institutional racism in British policing and society.",
     category: "post-imperial"
   },
   {
     year: "2012",
     title: "Hostile Environment Policy",
-    description: "Immigration policy targeting illegal immigrants that unfairly affected Commonwealth citizens, leading to the Windrush Scandal.",
+    description: "Immigration policy targeting undocumented migrants that disproportionately affected Commonwealth citizens, leading to the Windrush Scandal.",
     category: "post-imperial"
   },
   {
     year: "2016",
     title: "Brexit Vote",
-    description: "Campaign often talked about the "good old days" of empire and fears about immigration, showing ongoing tensions about British identity.",
+    description: "Campaign rhetoric often invoked imperial nostalgia and anxieties about immigration, revealing ongoing tensions around British identity after empire.",
     category: "post-imperial"
   },
   {
     year: "2020",
     title: "Black Lives Matter Protests in UK",
-    description: "George Floyd's murder sparked protests across Britain, connecting to local issues of racism and colonial history, including pulling down slave trader Edward Colston's statue in Bristol.",
+    description: "George Floyd's murder sparked protests across the UK, connecting to local issues of racial injustice and colonial legacy, including the removal of slave trader Edward Colston's statue in Bristol.",
     category: "blm"
   },
   {
     year: "2021",
-    title: "Race Report Controversy",
-    description: "Government report claimed structural racism wasn't a big problem, causing anger for downplaying Britain's colonial history and current racial inequalities.",
+    title: "Commission on Race and Ethnic Disparities Report",
+    description: "Controversial government report downplayed structural racism, triggering criticism for minimizing Britain's colonial legacy and contemporary racial inequalities.",
     category: "blm"
   },
   {
     year: "2023",
-    title: "Ongoing Change Efforts",
-    description: "Continuing work to address colonial history in schools, museums, and public spaces, connecting past injustice to today's equality movements.",
+    title: "Ongoing Decolonization Movements",
+    description: "Continuing efforts to address colonial legacies in institutions, education, and public spaces, connecting historical injustice to contemporary racial equality movements.",
     category: "blm"
   }
 ];
@@ -102,12 +102,12 @@ const Timeline: React.FC = () => {
   return (
     <section id="timeline" className="content-section bg-lightgray">
       <div className="container mx-auto">
-        <h2 className="text-navy font-serif mb-6 text-center">History Timeline</h2>
+        <h2 className="text-navy font-serif mb-6 text-center">Historical Timeline</h2>
         <Separator className="bg-burgundy h-1 w-20 mx-auto mb-8" />
         
         <p className="text-center max-w-3xl mx-auto mb-10">
-          This timeline shows key events from Britain's imperial past to today's racial justice 
-          movements, showing how the past still shapes the present.
+          This timeline traces key events from Britain's imperial past through to contemporary 
+          racial justice movements, showing the persistent influence of imperial structures and attitudes.
         </p>
         
         <div className="flex justify-center mb-10 flex-wrap">
@@ -121,19 +121,19 @@ const Timeline: React.FC = () => {
             className={`px-4 py-2 rounded-md mx-2 mb-2 transition-colors ${activeFilter === 'imperial' ? 'bg-navy text-white' : 'bg-white text-navy hover:bg-gray-100'}`}
             onClick={() => setActiveFilter('imperial')}
           >
-            Empire Era
+            Imperial Period
           </button>
           <button 
             className={`px-4 py-2 rounded-md mx-2 mb-2 transition-colors ${activeFilter === 'post-imperial' ? 'bg-navy text-white' : 'bg-white text-navy hover:bg-gray-100'}`}
             onClick={() => setActiveFilter('post-imperial')}
           >
-            After Empire
+            Post-Imperial Era
           </button>
           <button 
             className={`px-4 py-2 rounded-md mx-2 mb-2 transition-colors ${activeFilter === 'blm' ? 'bg-navy text-white' : 'bg-white text-navy hover:bg-gray-100'}`}
             onClick={() => setActiveFilter('blm')}
           >
-            BLM & Today
+            BLM & Contemporary
           </button>
         </div>
         
